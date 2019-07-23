@@ -1,0 +1,28 @@
+<h3>Discover broken links</h3>
+
+<h4>Features</h4>
+<ul>
+  <li>Supports various HTML elements/attributes with regex based on <a href="https://github.com/stevenvachon/broken-link-checker/blob/09682b3250e1b2d01e4995bac77ec77cb612db46/test/helpers/json-generators/scrapeHtml.js">scrapeHtml.js</a></li>
+  <li>Concurrently checks multiple links using defined threads.</li>
+  <li>Customizing [STATUS_CODES|PATH-PATTERN|MIME-TYPE]</li>
+</ul>
+
+<h4>Usage</h4>
+<p>By default it passively scans the responses with Target "Scope in" . Make sure to add the targets into the scope. (Reason: To Avoid Noise)</p>
+
+<p>WHITELIST_CODES - You can add status_code's to this list for more accurate results.</p>
+
+<p>ex: avoiding https redirects by adding 301, if the path,url redirects to https.</p>
+
+<p>WHITELIST_PATTERN - Regex extracting pattern based on given patterns.</p>
+
+<ul>
+  <li>ex: /admin.php</li>
+  <li>//google.com/test.jpg</li>
+  <li>../../img.src</li>
+  <li>WHITELIST_MEMES - Whitelisting MimeType to be processed for scanning patterns in responses if their Mime-Type matches.</li>
+</ul>
+
+<p>ex: Mainly used to avoid performing regexes in gif,img,jpg,swf etc</p>
+
+<p>no_of_threads - Increase no of threads , default : 15</p>

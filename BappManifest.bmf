@@ -1,0 +1,11 @@
+Uuid: fa31e4d97b4c410aa72a8cf4d9a65d6e
+ExtensionType: 2
+Name: Broken Link Hijacking
+RepoName: broken-link-hijacking
+ScreenVersion: 1.0
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: True
+Author: Arbazz Hussain
+ShortDescription: Discover broken links
+EntryPoint: blhchecker.py
